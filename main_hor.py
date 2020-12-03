@@ -16,7 +16,7 @@ finished = False
 
 
 def level_read():
-    file = open('level_2.txt', 'r')
+    file = open('level_5.txt', 'r')
     plat = []
     for line in file:
         a = line.split()
