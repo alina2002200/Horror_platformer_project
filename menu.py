@@ -1,4 +1,3 @@
-import pygame
 import pygame.draw
 import sys
 from platforms import *
