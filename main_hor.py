@@ -34,6 +34,8 @@ def frame_draw(plat):
         pygame.draw.rect(screen, GREEN, i.rect)
 
 
+pygame.mixer.music.load('Jungle.mp3')
+pygame.mixer.music.play()
 forest_surf = pygame.image.load('forest.jpg')
 forest_rect = forest_surf.get_rect(
     bottomright=(width, length))
