@@ -76,9 +76,7 @@ def quit_check(event, screen):
         menu(screen)
 
 
-menu(screen)
-while not finished:
-    clock.tick(FPS)
+def menu_choice(screen):
     for i in pygame.event.get():
         if i.type == pygame.QUIT:
             sys.exit()
@@ -165,4 +163,10 @@ while not finished:
                 quit_check(i.pos, screen)
                 pygame.display.update()
     pygame.display.update()
+
+
+menu(screen)
+while not finished:
+    clock.tick(FPS)
+    menu_choice(screen)
 pygame.quit()
